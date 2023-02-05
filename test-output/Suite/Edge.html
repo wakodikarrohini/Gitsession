@@ -1,0 +1,287 @@
+<html>
+<head>
+<title>TestNG:  Edge</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 08 18:41:28 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>88 seconds (88313 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Parallelism.ParametersTestNG.m1()'><b>m1</b><br>Test class: com.Parallelism.ParametersTestNG</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by @Test on method m1 but has not been marked @Optional or defined
+in C:\Users\sagar\eclipse-workspace\TestNG\crossbrowsertesting.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace744091947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace744091947'><pre>org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by @Test on method m1 but has not been marked @Optional or defined
+in C:\Users\sagar\eclipse-workspace\TestNG\crossbrowsertesting.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>com.Parallelism.ParametersTestNG@6a6afff2</td></tr>
+<tr>
+<td title='com.Parallelism.ParametersTestNG.m5()'><b>m5</b><br>Test class: com.Parallelism.ParametersTestNG</td>
+<td><div><pre>java.lang.AssertionError
+	at com.Parallelism.ParametersTestNG.m5(ParametersTestNG.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace988472394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace988472394'><pre>java.lang.AssertionError
+	at com.Parallelism.ParametersTestNG.m5(ParametersTestNG.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>com.Parallelism.ParametersTestNG@6a6afff2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m1()'><b>m1</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m1()'><b>m1</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m1()'><b>m1</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m2()'><b>m2</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m2()'><b>m2</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m2()'><b>m2</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+<tr>
+<td title='com.Parallelism.ParametersTestNG.m2()'><b>m2</b><br>Test class: com.Parallelism.ParametersTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.Parallelism.ParametersTestNG@6a6afff2</td></tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m3()'><b>m3</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m3()'><b>m3</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m3()'><b>m3</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+<tr>
+<td title='com.Parallelism.ParametersTestNG.m3()'><b>m3</b><br>Test class: com.Parallelism.ParametersTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.Parallelism.ParametersTestNG@6a6afff2</td></tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m4()'><b>m4</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m4()'><b>m4</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m4()'><b>m4</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+<tr>
+<td title='com.Parallelism.ParametersTestNG.m4()'><b>m4</b><br>Test class: com.Parallelism.ParametersTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.Parallelism.ParametersTestNG@6a6afff2</td></tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m5()'><b>m5</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m5()'><b>m5</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m5()'><b>m5</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m6()'><b>m6</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m6()'><b>m6</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m6()'><b>m6</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+<tr>
+<td title='com.Parallelism.ParametersTestNG.m6()'><b>m6</b><br>Test class: com.Parallelism.ParametersTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.Parallelism.ParametersTestNG@6a6afff2</td></tr>
+<tr>
+<td title='com.TestNGdemo.a.A.m7()'><b>m7</b><br>Test class: com.TestNGdemo.a.A</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.a.A@55b53d44</td></tr>
+<tr>
+<td title='com.TestNGdemo.b.B.m7()'><b>m7</b><br>Test class: com.TestNGdemo.b.B</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.b.B@482bce4f</td></tr>
+<tr>
+<td title='com.TestNGdemo.c.C.m7()'><b>m7</b><br>Test class: com.TestNGdemo.c.C</td>
+<td></td>
+<td>0</td>
+<td>com.TestNGdemo.c.C@366647c2</td></tr>
+</table><p>
+</body>
+</html>
